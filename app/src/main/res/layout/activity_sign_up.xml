@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreen_bg"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="100dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="25dp"
+            android:paddingLeft="40dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/login_signuptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to your account"
+            android:textSize="15dp"
+            android:paddingLeft="40dp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+   <LinearLayout
+       android:id="@+id/card-view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <com.wajahatkarim3.easyflipview.EasyFlipView
+           android:id="@+id/flipviewlayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           app:flipEnabled="true"
+           app:flipOnTouch="false"
+           app:flipDuration="400"
+           app:flipFrom="right"
+           app:flipType="horizontal"
+           app:autoFlipBack="false"
+
+           >
+
+           <LinearLayout
+               android:id="@+id/fliplayout02"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="20dp"
+                   app:cardElevation="0dp"
+                   >
+                   <LinearLayout
+                       android:layout_width="300dp"
+                       android:layout_height="370dp"
+                       android:orientation="vertical"
+                       android:gravity="center_horizontal"
+                       >
+                       <EditText
+                           android:id="@+id/signupetName"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="40dp"
+                           android:paddingBottom="16dp"
+                           android:hint="Full Name"
+                           android:inputType="textPersonName"
+                           android:textSize="13sp"
+                           />
+
+                       <EditText
+                           android:id="@+id/emailforsignup"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="30dp"
+                           android:paddingBottom="16dp"
+                           android:hint="Email"
+                           android:inputType="textPassword"
+                           android:textSize="13sp"
+
+
+                           />
+
+
+
+
+                       <EditText
+                           android:id="@+id/signupetPassword"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="30dp"
+                           android:paddingBottom="16dp"
+                           android:hint="Password"
+                           android:inputType="textPassword"
+                           android:textSize="13sp"
+
+
+                           />
+
+                       <Button
+                           android:id="@+id/btnsignup"
+                           android:layout_width="wrap_content"
+                           android:layout_height="35dp"
+                           android:layout_marginBottom="8dp"
+                           android:layout_marginLeft="8dp"
+                           android:layout_marginRight="8dp"
+                           android:layout_marginTop="33dp"
+                           android:onClick="createAccount"
+
+                           android:text="SignUp"
+
+                           android:backgroundTint="#689D4F"
+                           android:textColor="#fff"
+                           android:paddingLeft="40dp"
+                           android:paddingRight="40dp"
+                           android:paddingTop="-10dp"
+                           android:paddingBottom="-10dp"
+                           android:textAllCaps="false"
+
+                           android:background="@drawable/roundedbutton"
+
+
+                           />
+
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+           </LinearLayout>
+
+           <LinearLayout
+
+               android:id="@+id/fliplayout01"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="16dp"
+                   app:cardElevation="0dp"
+                   >
+                   <LinearLayout
+                       android:layout_width="300dp"
+                       android:layout_height="370dp"
+                       android:orientation="vertical"
+                       android:gravity="center_horizontal"
+                       >
+                       <EditText
+                           android:id="@+id/etName"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="60dp"
+                           android:paddingBottom="16dp"
+                           android:hint="Name"
+                           android:inputType="textPersonName"
+                           android:textSize="15sp"
+
+                           />
+
+                       <EditText
+                           android:id="@+id/etPassword"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="40dp"
+                           android:paddingBottom="16dp"
+                           android:hint="Password"
+                           android:inputType="textPassword"
+                           android:textSize="15sp"
+
+
+                           />
+
+                       <Button
+                           android:id="@+id/btnLogin"
+                           android:layout_width="wrap_content"
+                           android:layout_height="35dp"
+                           android:layout_marginBottom="8dp"
+                           android:layout_marginLeft="8dp"
+                           android:layout_marginRight="8dp"
+                           android:layout_marginTop="50dp"
+
+                           android:text="Login"
+
+                           android:backgroundTint="#689D4F"
+                           android:textColor="#fff"
+                           android:paddingLeft="40dp"
+                           android:paddingRight="40dp"
+                           android:paddingTop="-10dp"
+                           android:paddingBottom="-10dp"
+                           android:textAllCaps="false"
+
+                           android:background="@drawable/roundedbutton"
+
+
+                           />
+
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+           </LinearLayout>
+
+
+       </com.wajahatkarim3.easyflipview.EasyFlipView>
+   </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/createaccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create account?"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+
+        />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:textColor="#689D4F"
+                android:onClick="gotologin"
+
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

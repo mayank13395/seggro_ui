@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/newbackchatimg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/cropname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer few Questions to Continue.."
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:padding="17dp"/>
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="80dp"-->
+            <!--                android:layout_height="70dp"-->
+            <!--                app:cardElevation="8dp"-->
+            <!--                app:cardCornerRadius="39dp"-->
+
+            <!--                android:layout_marginLeft="10dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/topcropimage"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+
+            <!--                    android:src="@drawable/corn"/>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:src="@drawable/corn"/>-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/lat"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Check your Sugarcane health"-->
+            <!--                android:textColor="#fff"-->
+            <!--                android:textSize="10dp"-->
+            <!--                android:padding="17dp"/>-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/longi"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Check your Sugarcane health"-->
+            <!--                android:textColor="#fff"-->
+            <!--                android:textSize="10dp"-->
+            <!--                android:padding="17dp"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="20dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+
+        >
+
+        <LinearLayout
+            android:layout_below="@+id/navbar"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+
+
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                   android:layout_marginTop="30dp"
+
+                    android:id="@+id/imagecontainer"
+
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+
+
+
+
+
+
+                    >
+                    <ImageView
+                        android:id="@+id/usersPlantImage"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sugarcane"
+                        />
+
+
+
+                </LinearLayout>
+
+            <View
+                android:id="@+id/viewline"
+                android:layout_below="@+id/imagecontainer"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#000"
+                android:layout_height="1dp"/>
+
+
+                <LinearLayout
+
+                      android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.8"
+
+
+                    android:layout_alignParentBottom="true"
+
+
+                    android:orientation="vertical">
+                    <FrameLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <!--         <androidx.cardview.widget.CardView-->
+                        <!--             android:layout_width="match_parent"-->
+                        <!--             android:layout_height="wrap_content"-->
+                        <!--             android:elevation="20dp"-->
+                        <!--             android:layout_marginLeft="40dp"-->
+                        <!--             android:layout_marginRight="40dp"-->
+                        <!--             android:layout_marginTop="10dp"-->
+                        <!--             app:cardCornerRadius="3dp">-->
+
+
+                        <!--        <com.google.android.material.tabs.TabLayout-->
+                        <!--            android:id="@+id/tabs"-->
+                        <!--            android:layout_width="match_parent"-->
+                        <!--            android:layout_height="wrap_content"-->
+                        <!--
+
+
+                                  />-->
+
+
+                        <!--             <com.yourcompany.NonSwipeableViewPager-->
+
+                        <androidx.viewpager.widget.ViewPager
+
+                            android:id="@+id/view_pager1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+
+
+
+                        </androidx.viewpager.widget.ViewPager>
+
+
+                        <!--             <com.google.android.material.tabs.TabLayout-->
+                        <!--                 android:id="@+id/tabs"-->
+                        <!--                 android:layout_width="match_parent"-->
+                        <!--                 android:layout_height="wrap_content"-->
+
+                        <!--                 />-->
+
+
+
+                        <!--         </androidx.cardview.widget.CardView>-->
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+
+
+
+                >
+
+
+                <Button
+                    android:id="@+id/gotoPreviousFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Prev"
+                    android:layout_marginRight="50dp"
+
+
+                    android:background="@drawable/roundedbtngreen"
+
+                    android:textSize="10sp"
+
+                    android:textColor="#fff"
+                    android:onClick="gotoPrevFragment"
+                    />
+                <Button
+                    android:id="@+id/gotoNextFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Next"
+
+
+                    android:background="@drawable/roundedbtngreen"
+
+                    android:textSize="10sp"
+
+                    android:textColor="#fff"
+                    android:onClick="gotoNextFragment"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

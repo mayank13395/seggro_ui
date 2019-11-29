@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_increased"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_leaf"
+
+        />
+
+</LinearLayout>
+
+
+
+    <!--    <FrameLayout-->
+    <!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <ImageView-->
+    <!--            android:src="@drawable/splash"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+
+    <!--    </FrameLayout>-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:layout_editor_absoluteX="0dp"-->
+    <!--        tools:layout_editor_absoluteY="0dp">-->
+
+
+
+
+
+    <!--        <ImageView-->
+
+
+    <!--            style="padding"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_marginStart="100dp"-->
+
+    <!--            android:id="@+id/image-logo"-->
+
+
+
+
+    <!--            app:srcCompat="@drawable/splash"-->
+    <!--            tools:ignore="MissingConstraints" />-->
+
+
+    <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/textView"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            android:layout_marginTop="370dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:gravity="center_horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:text="Seggro"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textColor="#91de62"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textSize="30dp"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:id="@+id/textView2"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+
+
+
+
+    <!--&lt;!&ndash;            android:layout_marginTop="400dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:gravity="center_horizontal"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            android:text="Make your plant healthy"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textColor="#525252"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textSize="15dp"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            />&ndash;&gt;-->
+    <!--    </RelativeLayout>-->
+

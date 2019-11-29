@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/logo_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    android:weightSum="10"
+    android:orientation="vertical"
+
+    android:textColor="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+
+        android:background="@drawable/gridgrad"
+
+
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="Answer Few Questions to Continue..."/>
+    </LinearLayout>
+
+  <LinearLayout
+      android:layout_below="@+id/navbar"
+      android:layout_width="wrap_content"
+      android:orientation="vertical"
+      android:layout_centerInParent="true"
+      android:layout_marginTop="20dp"
+      android:layout_height="wrap_content">
+      <LinearLayout
+
+
+          android:id="@+id/container"
+
+          android:background="@drawable/cardbordercolor"
+          android:layout_below="@+id/navbar"
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_height="wrap_content">
+          <LinearLayout
+
+              android:id="@+id/imagecontainer"
+
+              android:layout_width="match_parent"
+              android:layout_weight="3"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="20dp"
+
+
+
+
+              >
+              <ImageView
+                  android:id="@+id/usersPlantImage"
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/sugarcane"
+                  />
+
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_below="@+id/imagecontainer"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="5"
+              android:layout_marginTop="12dp"
+              android:layout_alignParentBottom="true"
+
+
+              android:orientation="vertical">
+              <FrameLayout
+
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <!--         <androidx.cardview.widget.CardView-->
+                  <!--             android:layout_width="match_parent"-->
+                  <!--             android:layout_height="wrap_content"-->
+                  <!--             android:elevation="20dp"-->
+                  <!--             android:layout_marginLeft="40dp"-->
+                  <!--             android:layout_marginRight="40dp"-->
+                  <!--             android:layout_marginTop="10dp"-->
+                  <!--             app:cardCornerRadius="3dp">-->
+
+
+                  <!--        <com.google.android.material.tabs.TabLayout-->
+                  <!--            android:id="@+id/tabs"-->
+                  <!--            android:layout_width="match_parent"-->
+                  <!--            android:layout_height="wrap_content"-->
+                  <!--
+
+
+                            />-->
+
+
+                  <!--             <com.yourcompany.NonSwipeableViewPager-->
+
+                  <androidx.viewpager.widget.ViewPager
+
+                      android:id="@+id/view_pager1"
+                      android:layout_width="match_parent"
+                      android:layout_height="250dp"
+                      app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+
+
+
+                  </androidx.viewpager.widget.ViewPager>
+
+
+                  <!--             <com.google.android.material.tabs.TabLayout-->
+                  <!--                 android:id="@+id/tabs"-->
+                  <!--                 android:layout_width="match_parent"-->
+                  <!--                 android:layout_height="wrap_content"-->
+
+                  <!--                 />-->
+
+
+
+                  <!--         </androidx.cardview.widget.CardView>-->
+              </FrameLayout>
+
+
+          </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_below="@+id/container"
+
+          android:layout_width="match_parent"
+          android:layout_marginBottom="40dp"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:layout_marginTop="20dp"
+
+
+
+          >
+
+
+          <Button
+              android:id="@+id/gotoPreviousFragment"
+              android:layout_width="wrap_content"
+              android:layout_height="35dp"
+              android:text="Prev"
+              android:layout_marginRight="50dp"
+
+
+              android:background="@drawable/roundedbtngreen"
+
+              android:textSize="10sp"
+
+              android:textColor="#fff"
+              android:onClick="gotoPrevFragment"
+              />
+          <Button
+              android:id="@+id/gotoNextFragment"
+              android:layout_width="wrap_content"
+              android:layout_height="35dp"
+              android:text="Next"
+
+
+              android:background="@drawable/roundedbtngreen"
+
+              android:textSize="10sp"
+
+              android:textColor="#fff"
+              android:onClick="gotoNextFragment"
+              />
+      </LinearLayout>
+  </LinearLayout>
+
+
+</RelativeLayout>

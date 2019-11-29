@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Photoquestion1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question1"
+            android:paddingLeft="20dp"
+            android:textColor="#000"
+            android:textSize="15dp"/>
+
+
+        <RadioGroup
+            android:id="@+id/languageSelectionOptions"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/first"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+
+
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:buttonTint="#008577"
+
+                android:text="First option"/>
+            <RadioButton
+                android:id="@+id/second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:buttonTint="#008577"
+
+                android:text="Second option"/>
+            <RadioButton
+                android:id="@+id/third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:buttonTint="#008577"
+
+                android:text="Third option"/>
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</LinearLayout>

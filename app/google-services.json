@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "759864056079",
+    "firebase_url": "https://seggro-test-260412.firebaseio.com",
+    "project_id": "seggro-test-260412",
+    "storage_bucket": "seggro-test-260412.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759864056079:android:28b8a3fb0d0f8c7ba8867a",
+        "android_client_info": {
+          "package_name": "com.example.seggro_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759864056079-pi2grma1uv3maspkotr6e3hrj6ksu8eg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.seggro_ui",
+            "certificate_hash": "2ea2c8029f2b7cfd2c725596f6354bdf76673bb1"
+          }
+        },
+        {
+          "client_id": "759864056079-n7eae77p0mce8sauf5c7qiej2nh8kn9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA07x_pd-XQikpKyirMXNksvRESSYnlL-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759864056079-n7eae77p0mce8sauf5c7qiej2nh8kn9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

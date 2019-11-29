@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">seggro_ui</string>
+    <string name="title_activity_new_old_chat">NewOldChat</string>
+    <string name="tab_text_1">New</string>
+    <string name="tab_text_2">Previous Chat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_image_data">image_data</string>
+    <string name="title_activity_image_questions">ImageQuestions</string>
+    <string name="title_activity_latlong">Latlong</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_dummy_tablayout">dummyTablayout</string>
+
+    <string name="question1"><b><i>Sowing Time ?</i></b></string>
+    <string name="question2"><b><i>Lifecycle of the crop ?</i></b></string>
+    <string name="question3"><b><i>Season of the crop ?</i></b></string>
+    <string name="title_activity_loader">Loader</string>
+</resources>

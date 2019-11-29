@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageResult">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="40dp"
+
+        android:background="@drawable/headerresultimg"
+
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Result"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Here is the result we found on your image"
+            android:textColor="#fff"/>
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/gridgrad"-->
+<!--        android:layout_alignParentBottom="true">-->
+
+<!--    </LinearLayout>-->
+
+    <include layout="@layout/content_loader" />
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/resultToShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/cardbordercolor">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:weightSum="10"
+            android:orientation="vertical">
+
+            <ImageView
+                android:padding="10dp"
+
+                android:layout_alignParentTop="true"
+
+                android:id="@+id/userplantimg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+               android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="3"
+
+                android:src="@drawable/corn"/>
+            <LinearLayout
+                android:layout_below="@+id/userplantimg"
+                android:layout_weight="5"
+                android:id="@+id/tableData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/chattableborder"
+                android:layout_marginBottom="20dp"
+
+
+
+                android:orientation="vertical">
+
+                <!--          <androidx.cardview.widget.CardView-->
+                <!--              android:layout_width="wrap_content"-->
+                <!--              android:layout_height="wrap_content"-->
+
+
+                <!--              >-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    >
+                    <TextView
+
+
+                        android:gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plant name"
+
+
+
+                        />
+                    <!--                  <View-->
+                    <!--                      android:layout_width="1dp"-->
+                    <!--                      android:layout_height="mat"-->
+                    <!--                      android:background="#000" />-->
+
+
+                    <!--                  <View-->
+                    <!--                      android:layout_width="1dp"-->
+                    <!--                      android:layout_height="240dp"-->
+                    <!--                      android:layout_marginLeft="10dp"-->
+                    <!--                      android:background="#000" />-->
+                    <TextView
+                        android:id="@+id/plantName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plant Name"
+                        android:gravity="right"
+
+
+
+
+                        />
+
+                </LinearLayout>
+                <!--            <View-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="1dp"-->
+                <!--                android:background="#000" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textAlignment="center"
+
+                        android:text="Disease " />
+
+                    <TextView
+                        android:id="@+id/disease"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yes/No"
+
+
+                        android:gravity="right"
+                        />
+
+                </LinearLayout>
+
+                <!--            <View-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="1dp"-->
+                <!--                android:background="#000" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disease Name"
+
+
+                        />
+                    <TextView
+                        android:id="@+id/diseaseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plant Name"
+                        android:gravity="right"
+
+                        />
+
+                </LinearLayout>
+
+                <!--            <View-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="1dp"-->
+                <!--                android:background="#000" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Solution"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/solution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Solution "
+                        android:gravity="right"
+
+
+                        />
+
+                </LinearLayout>
+                <!--            <View-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="1dp"-->
+                <!--                android:background="#000" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pesticides"
+
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/pesticides"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plant Name"
+
+                        android:gravity="right"
+
+                        />
+
+                </LinearLayout>
+                <!--          </androidx.cardview.widget.CardView>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+               android:layout_below="@+id/tableData"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:onClick="gotoChatPage"
+
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+
+                    android:textSize="17dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/resultbtn"
+                    android:text="Chat with Us"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="40dp"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:background="@drawable/gridgrad"-->
+<!--    android:layout_alignParentBottom="true">-->
+
+<!--</LinearLayout>-->
+
+</RelativeLayout>
